@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Consul</title>
+    <link rel="stylesheet" href="style.css"> </head>
+ 
+<body>
+    <div class="consultant">
+        <div class="consultantname">
+            
+
+        </div>
+        <div class="input">
+            <input id="text" type="text" class="inputcl">
+            <button id="button" class="btncl">Ok</button>
+        </div>
+        <div id="chat"> </div>
+    </div>
+    <script>
+    function sendme() {
+        document.getElementById('chat').innerHTML += document.getElementById("text").value + '<br>';
+        document.getElementById("text").value = '';
+    }
+    document.getElementById('button').addEventListener('click', sendme);
+    </script>
+</body>
+ 
+</html>

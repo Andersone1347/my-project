@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>бла бла</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</style>
+</head>
+<script>
+function delete_item(elem){
+    if(confirm('Вы подтверждаете удаление записи '+elem.previousElementSibling.value+"?")){
+        var par = elem.parentNode;
+        par.parentNode.removeChild(par);
+    }
+}
+</script>
+<body>
+<div class="box_input">
+   <input type="text" value="input_one">
+   <a class="delete_input" onclick="delete_item(this)" href="#">Удалить</a>
+</div>
+<div class="box_input">
+   <input type="text" value="input_two">
+   <a class="delete_input" onclick="delete_item(this)" href="#">Удалить</a>
+</div>
+</body>
+</html>

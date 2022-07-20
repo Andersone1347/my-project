@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <input type="text" class="input-form" name="comment">
+        <input type="button" class="btn" value="ОК" onClick="function">
+        <div class="box"></div>
+        </body>
+    <script>
+
+       window.onload = function  () { // При загрузке документа
+        let text = document.getElementsByClassName('input-form')[0]; // Получаем первый элемент с классом input-form
+        let box = document.getElementsByClassName('box')[0]
+        ; // Получаем первый элемент с классом box
+        text.oninput = function () { // Отслеживаем ввод в поле input
+            box.innerText = this.value;  // В box выводим вводимый текст.
+        }
+        document.querySelector('.btn').onclick = function() {
+            document.querySelector('div').hidden =! document.querySelector('div').hidden           
+}
+    } 
+ 
+    </script>
+<style>
+
+</style>
+
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="input-form" name="sss">
+    <input id="inputid" type="button" onclick="name(e)" name="sss">
+<div id="boxid" class="box"></div>
+    <script>
+    document.getElementById('inputid').addEventListener // добавляем событие
+    (
+      'input', // на ввод
+      function name(e){ // задаём имя, чтобы потом можно было сбросить  выполнение функции на событие
+        document.getElementById('boxid').innerText = this.value; // задаем текстом div'a значение поля, которое "прослушиваем"
+      }
+    )
+      </script>
+</body>
+</html>
